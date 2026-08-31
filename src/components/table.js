@@ -42,7 +42,7 @@ export function initTable(settings, onAction) {
           row.elements[key].textContent = item[key];
         }
       });
-      return (row, container);
+      return row.container;
     });
     root.elements.rows.replaceChildren(...nextRows);
   };
